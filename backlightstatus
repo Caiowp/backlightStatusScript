@@ -1,0 +1,6 @@
+#!/bin/bash
+
+backlight="$(light -G | awk -F '.' ' { print $1 } ')""%"
+
+
+echo "$backlight"
